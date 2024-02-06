@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1 -->
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.philspanel" ExtensionBundleVersion="1.0.0" Version="9.0">
+   <!-- 2 -->
+   <ExtensionList>
+      <Extension Id="com.philspanel.panel" Version="0.0.1" />
+   </ExtensionList>
+   <ExecutionEnvironment>
+      <!-- 3 -->
+      <HostList>
+         <Host Name="PPRO" Version="20" />
+         <Host Name="AEFT" Version="20" />
+      </HostList>
+      <LocaleList>
+         <Locale Code="All" />
+      </LocaleList>
+      <RequiredRuntimeList>
+         <!-- 4 -->
+         <RequiredRuntime Name="CSXS" Version="11.0" />
+      </RequiredRuntimeList>
+   </ExecutionEnvironment>
+   <DispatchInfoList>
+      <Extension Id="com.philspanel.panel">
+         <DispatchInfo>
+            <Resources>
+               <!-- 5 -->
+               <MainPath>./index.html</MainPath>
+            </Resources>
+            <UI>
+               <!-- 6 -->
+               <Type>Panel</Type>
+               <!-- 7 -->
+               <Menu>Phils Panel v2</Menu>
+               <Geometry>
+                  <!-- 8 -->
+                  <Size>
+                     <Height>300</Height>
+                     <Width>550</Width>
+                  </Size>
+               </Geometry>
+            </UI>
+         </DispatchInfo>
+      </Extension>
+   </DispatchInfoList>
+</ExtensionManifest>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Phillys gute to-do Liste</title>
+		<link href="style.css" rel="stylesheet">
+		<!---Google Fonts zum ausprobieren--->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+
+	</head>
+	<body>
+		<div class="top-line" id="input-container">
+			<span id="apple" draggable="true">🍎</span>
+			<!--<input class="input" id="input" type="text" placeholder="Was willst du tun?">-->
+			<button class="delbtn" id="delbtn">Liste löschen</button>
+		</div>
+		<div class="philly" id="philly">(づ˶•༝•˶)づ🗑</div>
+		<div id="navbar">
+			<ul class="listContainer" id="listContainer">
+				<input class="input-list-name" id="input-list-name" type="text" placeholder="Enter a fancy new list here!">
+				<button class="btn" id="addbtn">+</button>
+			</ul>
+		</div>
+		<div class="allcontent-container" id="allcontent">
+			<div class="tab-content" data-tab-content></div>
+		</div>
+		<div class="input-container">
+			<input class="input" id="input" type="text" placeholder="Enter a fancy new task">
+		</div>
+		<div class="footer">
+			<p>click <span class="highlight">on a task to mark it as completed</span>, drag & drop <span class="highlight">a completed task onto philly</span>, right-click <span class="highlight">a list to delete it</span></p>
+			<p>phillys to-do list<br>© 2023</p>
+		</div>
+		<template id="task-template">
+			<div class="task" draggable="true">
+				<input type="checkbox" />
+				<label>
+					<span class="custom-checkbox"></span>
+				</label>
+			</div>
+		</template>
+		<script src="main.js"></script>
+	</body>
+</html>
